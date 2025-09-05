@@ -22,5 +22,8 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
+          vendor: true
+          vendor-dir: vendor
+          vendor-url: https://github.com/TheMuppets/proprietary_vendor_asus_Z01R
           android-version: 12
           aosp-clang-version: r383902
