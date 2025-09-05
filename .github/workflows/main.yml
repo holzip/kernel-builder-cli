@@ -15,15 +15,12 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/holzip/android_kernel_asus_sdm845
+          kernel-url: https://github.com/artem/msm-4.9
           kernel-dir: msm-4.9
           kernel-branch: lineage-22.2
-          config: vendor/asus/Z01R.config
+          config: sdm845-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          vendor: true
-          vendor-dir: vendor
-          vendor-url: https://github.com/TheMuppets/proprietary_vendor_asus_Z01R
-          android-version: 12
+          android-version: 10
           aosp-clang-version: r383902
