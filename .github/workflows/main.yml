@@ -15,7 +15,7 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-        kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sdm845
+          kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sdm845
           kernel-branch: lineage-22.2
           config: sdm845-perf_defconfig
           arch: arm64
