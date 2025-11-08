@@ -21,4 +21,6 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz
+          aosp-clang-version: r522817
+          other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads
+          other-clang-branch: main
