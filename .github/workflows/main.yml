@@ -1,5 +1,5 @@
 # A simple action usage
-name: Build Kernel for Zenfone 5Z
+name: test build
 on:
   workflow_dispatch:
 
@@ -15,12 +15,10 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/artem/msm-4.9
-          kernel-dir: msm-4.9
-          kernel-branch: master
+        kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sdm845
+          kernel-branch: lineage-22.2
           config: sdm845-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          #android-version: 15
-          #aosp-clang-version: r383902
+          other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz
