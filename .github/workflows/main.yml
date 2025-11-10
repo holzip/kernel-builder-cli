@@ -23,4 +23,4 @@ jobs:
           aosp-clang: true
           aosp-clang-version: r522817
           other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads
-          other-clang-branch: main
+          other-clang-branch: main/.
